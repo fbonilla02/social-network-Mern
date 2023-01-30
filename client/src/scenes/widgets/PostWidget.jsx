@@ -26,7 +26,7 @@ export default function PostWidget({
     const primary = palette.primary.main
     
     const patchLike = async()=>{
-        const response = await fetch(`http://localhost:3001/posts/${postId}/like`,
+        const response = await fetch(`/posts/${postId}/like`,
         {
             method: "PATCH",
             headers:{
@@ -46,7 +46,7 @@ export default function PostWidget({
             {description}
         </Typography>
         {picturePath && (
-            <img width="100%" height="auto" alt={picturePath} style={{borderRadius: "0.75rem", marginTop:"0.75rem"}} src={`http://localhost:3001/assets/${picturePath}`} />
+            <img width="100%" height="auto" alt={picturePath} style={{borderRadius: "0.75rem", marginTop:"0.75rem"}} src={`/assets/${picturePath}`} />
         )}
         <FlexBetween mt="0.25rem">
             <FlexBetween gap="1rem">
