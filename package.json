@@ -1,0 +1,22 @@
+{
+  "name": "mern-social-network",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd server && npm install && cd ../client npm install && npm run build",
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fbonilla02/social-network-Mern.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fbonilla02/social-network-Mern/issues"
+  },
+  "homepage": "https://github.com/fbonilla02/social-network-Mern#readme"
+}
